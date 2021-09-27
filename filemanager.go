@@ -40,7 +40,7 @@ type FileManager struct {
 type PathValidator func(path string) error
 
 func init() {
-	plugins.Add(&FileManager{Base: &plugins.Base{PlugName: Name}})
+	//plugins.Add(&FileManager{Base: &plugins.Base{PlugName: Name}})
 }
 
 const (
@@ -175,7 +175,7 @@ func (f *FileManager) InitPlugin(srv service.List) {
 	f.App = f.initRouter(srv)
 	f.handler.HTML = f.HTMLMenu
 
-	language.Lang[language.CN].Combine(language2.CN)
+	//language.Lang[language.CN].Combine(language2.CN)
 	language.Lang[language.EN].Combine(language2.EN)
 
 	errors.Init()

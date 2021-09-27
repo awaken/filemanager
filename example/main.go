@@ -54,7 +54,7 @@ func main() {
 		panic(err)
 	}
 
-	if err := e.AddConfig(cfg).
+	if err := e.AddConfig(&cfg).
 		AddPlugins(filemanager.
 			NewFileManager(filepath.Join(dir, "book")).
 			AddRoot("code", root.Root{Path: filepath.Join(dir, "code"), Title: "Code"}).
