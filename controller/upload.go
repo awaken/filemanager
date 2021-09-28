@@ -72,7 +72,7 @@ func (h *Handler) CreateDirPopUp(ctx *context.Context) {
 							error: function (data) {
 								NProgress.done();
 								if (data.responseText !== "") {
-									swal(data.responseJSON.msg, '', 'error');								
+									swal(data.responseJSON.msg, '', 'error');
 								} else {
 									swal('error', '', 'error');
 								}
@@ -104,6 +104,7 @@ func (h *Handler) CreateDir(ctx *context.Context) {
 		return
 	}
 
+	println("create dir: " + param.Dir)
 	err := os.MkdirAll(filepath.FromSlash(param.Dir), os.ModePerm)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, map[string]interface{}{
