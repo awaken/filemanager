@@ -1,4 +1,4 @@
-module filemanager
+module github.com/GoAdminGroup/filemanager
 
 go 1.17
 
