@@ -12,6 +12,7 @@ require (
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect
 	github.com/go-playground/validator/v10 v10.9.0 // indirect
+	github.com/goccy/go-json v0.7.9 // indirect
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/h2non/filetype v1.1.1
@@ -41,8 +42,6 @@ require (
 	xorm.io/xorm v1.2.5 // indirect
 )
 
-require github.com/goccy/go-json v0.7.9 // indirect
-
-replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20210929170206-bfb7a3a9691b
+replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20210929192320-edc668956d79
 
 //replace github.com/GoAdminGroup/go-admin => ./dep/pkg/go-admin
