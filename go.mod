@@ -7,6 +7,7 @@ require (
 	github.com/GoAdminGroup/go-admin v1.2.23
 	github.com/GoAdminGroup/html v0.0.1
 	github.com/NebulousLabs/fastrand v0.0.0-20181203155948-6fb6489aac4e // indirect
+	github.com/fsnotify/fsnotify v1.5.1 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/gin-gonic/gin v1.7.4 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
@@ -38,10 +39,12 @@ require (
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/ini.v1 v1.63.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
+	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
 	xorm.io/builder v0.3.9 // indirect
 	xorm.io/xorm v1.2.5 // indirect
 )
 
-replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20210930200856-fc0fc1945cb1
+replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20210930202506-0c49c1c65070
+
 //replace github.com/GoAdminGroup/go-admin => ./dep/pkg/go-admin
 //replace github.com/GoAdminGroup/go-admin => ../go-admin
