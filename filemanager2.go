@@ -38,7 +38,7 @@ func (f *FileManager) InitPlugin2(admin *admin.Admin, srv service.List) {
 
 func (f *FileManager) initRouter2(admin *admin.Admin) *context.App {
 	app := context.NewApp()
-	authRoute := app.Group("/", admin.GlobalErrorHandler(), auth.Middleware(f.Conn))
+	authRoute := app.Group("/", admin.GlobalErrorHandler, auth.Middleware(f.Conn))
 
 	authRoute.GET("/", f.guard.Files, f.handler.ListFiles)
 	authRoute.GET("/:__prefix/list", f.guard.Files, f.handler.ListFiles)
