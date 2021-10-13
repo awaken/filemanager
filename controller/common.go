@@ -51,7 +51,7 @@ func (h *Handler) Prefix(ctx *context.Context) string {
 	return prefix
 }
 
-func (h *Handler) preview(ctx *context.Context, content template2.HTML, relativePath, path string, err error) {
+func (h *Handler) preview(ctx *context.Context, content template.HTML, relativePath, path string, err error) {
 
 	comp := template.Default()
 

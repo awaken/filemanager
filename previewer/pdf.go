@@ -14,6 +14,6 @@ func (p *PDF) Preview(content []byte) template.HTML {
 	//	SetStyle("margin", "20px auto 20px auto").
 	//	SetStyle("width", "500px").
 	//	SetContent(``).
-	//	Get()
+	//	MustGet()
 	panic("implement me")
 }
