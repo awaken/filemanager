@@ -6,7 +6,6 @@ require (
 	github.com/GoAdminGroup/go-admin v1.2.23
 	github.com/GoAdminGroup/html v0.0.1
 	github.com/h2non/filetype v1.1.3
-	golang.org/x/tools v0.1.9
 )
 
 require (
@@ -39,6 +38,7 @@ require (
 	golang.org/x/crypto v0.0.0-20220307211146-efcb8507fb70 // indirect
 	golang.org/x/sys v0.0.0-20220310020820-b874c991c1a5 // indirect
 	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/tools v0.1.9 // indirect
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 	xorm.io/builder v0.3.9 // indirect

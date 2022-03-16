@@ -8,12 +8,11 @@ import (
 	"os"
 	"path/filepath"
 	"strings"
-
-	"golang.org/x/tools/godoc/util"
+	"unicode/utf8"
 )
 
 func FileExist(path string) bool {
-	_, err := os.Stat(path) //os.Stat获取文件信息
+	_, err := os.Stat(path)
 	if err != nil {
 		return os.IsExist(err)
 	}
@@ -78,7 +77,27 @@ func IsTextFile(filepath string) bool {
 		return false
 	}
 
-	return util.IsText(buf[0:n])
+	return IsTextBuffer(buf[0:n])
+}
+
+// IsTextBuffer reports whether a significant prefix of s looks like correct UTF-8;
+// that is, if it is likely that s is human-readable text.
+func IsTextBuffer(s []byte) bool {		// taken from util.IsText of golang.org/x/tools/godoc/util
+	const max = 1024 // at least utf8.UTFMax
+	if len(s) > max {
+		s = s[0:max]
+	}
+	for i, c := range string(s) {
+		if i+utf8.UTFMax > len(s) {
+			// last char may be incomplete - ignore
+			break
+		}
+		if c == 0xFFFD || c < ' ' && c != '\n' && c != '\t' && c != '\f' {
+			// decoding error or control character - not a text file
+			return false
+		}
+	}
+	return true
 }
 
 func Substr(s string, pos, length int) string {
