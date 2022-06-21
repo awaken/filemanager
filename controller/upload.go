@@ -104,7 +104,7 @@ func (h *Handler) CreateDir(ctx *context.Context) {
 		return
 	}
 
-	println("create dir: " + param.Dir)
+	//println("create dir: " + param.Dir)
 	err := os.MkdirAll(filepath.FromSlash(param.Dir), os.ModePerm)
 	if err != nil {
 		ctx.JSON(http.StatusInternalServerError, map[string]interface{}{
