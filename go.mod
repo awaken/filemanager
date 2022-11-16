@@ -19,7 +19,6 @@ require (
 	github.com/go-playground/validator/v10 v10.11.1 // indirect
 	github.com/goccy/go-json v0.9.11 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
-	github.com/hashicorp/golang-lru v0.5.4 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.1 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
@@ -46,7 +45,7 @@ require (
 	xorm.io/xorm v1.3.2 // indirect
 )
 
-replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20221116142427-f2f0c7df41e2
+replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20221116143039-247f3096fa6e
 
 //replace github.com/GoAdminGroup/go-admin => ./dep/pkg/go-admin
 //replace github.com/GoAdminGroup/go-admin => ../go-admin
