@@ -20,6 +20,7 @@ require (
 	github.com/goccy/go-json v0.9.11 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/hashicorp/golang-lru v0.5.4 // indirect
+	github.com/hashicorp/golang-lru/v2 v2.0.1 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
 	github.com/leodido/go-urn v1.2.1 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
@@ -35,9 +36,9 @@ require (
 	go.uber.org/atomic v1.10.0 // indirect
 	go.uber.org/multierr v1.8.0 // indirect
 	go.uber.org/zap v1.23.0 // indirect
-	golang.org/x/crypto v0.1.0 // indirect
-	golang.org/x/net v0.1.0 // indirect
-	golang.org/x/sys v0.1.0 // indirect
+	golang.org/x/crypto v0.2.0 // indirect
+	golang.org/x/net v0.2.0 // indirect
+	golang.org/x/sys v0.2.0 // indirect
 	golang.org/x/text v0.4.0 // indirect
 	google.golang.org/protobuf v1.28.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
@@ -45,7 +46,7 @@ require (
 	xorm.io/xorm v1.3.2 // indirect
 )
 
-replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20221105225408-869ef2ad54d6
+replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20221116142427-f2f0c7df41e2
 
 //replace github.com/GoAdminGroup/go-admin => ./dep/pkg/go-admin
 //replace github.com/GoAdminGroup/go-admin => ../go-admin
