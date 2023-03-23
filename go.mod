@@ -50,7 +50,7 @@ require (
 	xorm.io/xorm v1.3.2 // indirect
 )
 
-replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20230224164422-88d57a1c55e2
+replace github.com/GoAdminGroup/go-admin => github.com/awaken/go-admin v0.0.0-20230323180912-63ac2ffe9627
 
 //replace github.com/GoAdminGroup/go-admin => ./dep/pkg/go-admin
 //replace github.com/GoAdminGroup/go-admin => ../go-admin
